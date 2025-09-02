@@ -1,6 +1,5 @@
  import java.util.Scanner;
 
-// ----------- Stack Interface -----------
 interface Stack<T> {
     void push(T item);
     T pop();
@@ -9,7 +8,6 @@ interface Stack<T> {
     int size();
 }
 
-// ----------- Array-based Stack Implementation -----------
 class ArrayStack<T> implements Stack<T> {
     private Object[] arr;
     private int top;
@@ -58,7 +56,7 @@ class ArrayStack<T> implements Stack<T> {
     }
 }
 
-// ----------- TextEditor with Undo Feature -----------
+
 class TextEditor {
     private StringBuilder text;
     private Stack<String> history;
@@ -92,7 +90,6 @@ class TextEditor {
     }
 }
 
-// ----------- Main Class -----------
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
